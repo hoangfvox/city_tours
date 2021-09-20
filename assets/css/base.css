@@ -1,0 +1,189 @@
+/* BASE CSS */
+
+:root {
+    --primary-color: #f3a46b;
+    --text-color: #727475;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.btn {
+    color: #fff !important;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 20px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+}
+    
+.hot-search::before {
+    content: "HOT";
+    float: right;
+    background-color: #f76570;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 3px 5px;
+}
+
+.new-about-us::before {
+    content: "NEW";
+    float: right;
+    background-color: #1bbc9b;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 3px 5px;
+}
+
+.best-carousel::before {
+    content: "BEST";
+    float: right;
+    background-color: #14b9d5;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 3px 5px;
+}
+
+/* Animation */
+@keyframes heading1Fly {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    } to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes heading2Fly {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    } to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.heading-1-fly {
+    animation: heading1Fly ease-in .5s;
+}
+.heading-2-fly {
+    animation: heading2Fly ease-in .5s;
+    /* opacity: 1; */
+}
+@keyframes heading1Fade {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    } to {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+}
+@keyframes heading2Fade {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    } to {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+}
+.heading-1-fade {
+    animation: heading1Fade ease-in .5s;
+}
+.heading-2-fade {
+    animation: heading2Fade ease-in .5s;
+}
+
+
+
+@keyframes contentFlyIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.content-flyin {
+    animation: contentFlyIn ease-in .5s;
+    opacity: 1;
+}
+@keyframes contentFadeIn {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    } to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+.content-fadein {
+    animation: contentFadeIn ease-in .5s;
+    opacity: 0;
+}
+
+
+
+
+@keyframes flipButton {
+    from {
+        opacity: 0;
+        transform: rotateX(180deg);
+        transform-style: preserve-3d;
+        transform-origin: top;
+    } 
+    50% {
+        opacity: 0;
+    } to {
+        opacity: 1;
+        transform: rotateX(0deg);
+        transform-style: preserve-3d;
+        transform-origin: top;
+    }
+}
+.flip-button {
+    animation: flipButton ease-in .4s;
+}
+
+.appear-in__btn {
+    animation: appearIn ease-in .5s;
+    opacity: 0;
+}
+
+.fade-in {
+    animation: opacityAnimation2 ease-in .5s;
+    opacity: 0;
+}
+
+@keyframes opacityImg {
+    from {
+        opacity: 0.5;
+    } 10% {
+        opacity: 1;
+    } 90% {
+        opacity: 1;
+    } to {
+        opacity: 0.5;
+    }
+}
+
