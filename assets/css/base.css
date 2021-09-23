@@ -19,8 +19,28 @@ html {
     color: var(--primary-color);
 }
 
-.btn {
+.white-text {
     color: #fff !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.btn {
+    color: #fff;
     font-size: 1.6rem;
     text-transform: uppercase;
     text-decoration: none;

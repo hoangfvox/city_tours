@@ -14,25 +14,8 @@ Array.from(Subnav).map(function(item, index) {
     })
 })
 
-// var slideIndex = 1;
-// showDivs(slideIndex);
 
-// function plusDivs(n) {
-//   showDivs(slideIndex += n);
-//   changeTime = 0;
-// }
-// function showDivs(n) {
-//   var i;
-//   var x = document.getElementsByClassName("slider-img");
-//   if (n > x.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = x.length} ;
-  
-//   // for (i = 0; i < x.length; i++) {
-//   //   x[i].style.display = none;
-//   // }
-//   // x[slideIndex-1].style.display = "block";
-// }
-
+// Next Slider
 var arrowBtn = () => {
   $('.move-img').classList.toggle('fade-img');
   $('.move-img').classList.toggle('appear-img');
@@ -54,7 +37,6 @@ var arrowBtn = () => {
 
     setTimeout(() => { 
       timeDelay += 100;
-      console.log(timeDelay)
       item.style['animation-delay'] = (timeDelay/1000) + 's';
     }, 500);
     setTimeout(() => { 
@@ -99,8 +81,7 @@ setInterval(() => {
 }, 10);
 
 
-// Animation
-
+// Slider Animation
 var sliderTextAnimation = () => {
   var timeDelay = 0.1;
   for (let i = 0; i < 6; i++) {
@@ -136,7 +117,7 @@ var sliderTextAnimation = () => {
 }
 sliderTextAnimation();
 
-// Text-heading
+// Text-heading animation
 var element = $('.text-heading');
 var angle = 0;
 var x = 0;
@@ -158,3 +139,73 @@ function ballCircle() {
     setTimeout(ballCircle,2);
 }
 ballCircle();
+
+// Tours price color
+const gradientColor = [
+  'linear-gradient(to right, #ffd205 0%, #ff9b05 100%)',
+  'linear-gradient(to right, #f76570 0%, #f78d65 100%)',
+  'linear-gradient(to right, #ba71da 0%, #da717b 100%)',
+  'linear-gradient(to right, #14b9d5 0%, #14d5b1 100%)',
+];
+var tourPrice = $$('.tour-price');
+Array.from(tourPrice).map(function(item, index) {
+  item.style['background'] = gradientColor[index];
+});
+
+
+// Our Services
+const serviceColor = [
+  '#1bbc9b',
+  '#ff6868',
+  '#14b9d5',
+  'var(--primary-color)',
+  '#c755da',
+  '#ff6868',
+];
+
+var servicesItemValue = [
+  {
+    img: './assets/img/ico-00.png',
+    h1: 'Insurance',
+    btnColor: serviceColor[0],
+  },
+  {
+    img: './assets/img/ico-01.png',
+    h1: 'Medical Care',
+    btnColor: serviceColor[1],
+  },
+  {
+    img: './assets/img/ico-02.png',
+    h1: 'Meals Included',
+    btnColor: serviceColor[2],
+  },
+  {
+    img: './assets/img/ico-03.png',
+    h1: 'Accessibility',
+    btnColor: serviceColor[3],
+  },
+  {
+    img: './assets/img/ico-04.png',
+    h1: 'Customer Care',
+    btnColor: serviceColor[4],
+  },
+  {
+    img: './assets/img/ico-05.png',
+    h1: 'Shuttle Included',
+    btnColor: serviceColor[5],
+  },
+]
+
+var servicesItem = Array.from($$('.services-item'));
+const htmls = servicesItemValue.map((item, index) => {
+  const html = `
+  <img src="${item.img}" alt="" class="service-icon">
+  <div class="service-content white-text">
+      <h1>${item.h1}</h1>
+      <p>Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
+      <a href="" class="btn" style="background-color: ${item.btnColor}">View More</a>
+  </div>
+  `
+  servicesItem[index].innerHTML = html;
+})
+// servicesItem[index].innerHTML = htmls.join('');
