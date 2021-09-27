@@ -47,6 +47,7 @@ html {
     padding: 5px 20px;
     background-color: var(--primary-color);
     border-radius: 20px;
+    cursor: pointer;
 }
     
 .hot-search::before {
@@ -95,17 +96,17 @@ html {
 @keyframes heading2Fly {
     from {
         opacity: 0;
-        transform: translateX(200px);
+        transform: translateX(100px);
     } to {
         opacity: 1;
         transform: translateX(0);
     }
 }
 .heading-1-fly {
-    animation: heading1Fly ease-in .5s;
+    animation: heading1Fly ease-in-out .5s;
 }
 .heading-2-fly {
-    animation: heading2Fly ease-in .5s;
+    animation: heading2Fly ease-in-out .5s;
     /* opacity: 1; */
 }
 @keyframes heading1Fade {
@@ -123,14 +124,14 @@ html {
         transform: translateX(0);
     } to {
         opacity: 0;
-        transform: translateX(200px);
+        transform: translateX(100px);
     }
 }
 .heading-1-fade {
-    animation: heading1Fade ease-in .5s;
+    animation: heading1Fade ease-in-out .5s;
 }
 .heading-2-fade {
-    animation: heading2Fade ease-in .5s;
+    animation: heading2Fade ease-in-out .5s;
 }
 
 
@@ -145,7 +146,7 @@ html {
     }
 }
 .content-flyin {
-    animation: contentFlyIn ease-in .5s;
+    animation: contentFlyIn ease-in-out .5s;
     opacity: 1;
 }
 @keyframes contentFadeIn {
@@ -158,7 +159,7 @@ html {
     }
 }
 .content-fadein {
-    animation: contentFadeIn ease-in .5s;
+    animation: contentFadeIn ease-in-out .5s;
     opacity: 0;
 }
 
@@ -182,18 +183,27 @@ html {
     }
 }
 .flip-button {
-    animation: flipButton ease-in .4s;
+    animation: flipButton ease-in-out 1s;
 }
 
+@keyframes appearIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 .appear-in__btn {
-    animation: appearIn ease-in .5s;
-    opacity: 0;
+    animation: appearIn ease-in-out .5s;
+    opacity: 1;
 }
 
-.fade-in {
-    animation: opacityAnimation2 ease-in .5s;
-    opacity: 0;
+@keyframes fadeIn {
+    from { opacity: 1; }
+    to { opacity: 0; }
 }
+.fade-in__btn {
+    animation: fadeIn ease-in-out 0.5s;
+    opacity: 0 !important;
+}
+
 
 @keyframes opacityImg {
     from {

@@ -50,18 +50,22 @@ var arrowBtn = () => {
 
   $('.slider__buy-btn').classList.toggle(`flip-button`);
   $('.slider__buy-btn').style['animation-delay'] = 0 + 's';
-  setTimeout(() => {$('.slider__buy-btn').style.opacity = 0;}, 10);
-  setTimeout(() => {$('.slider__buy-btn').classList.toggle(`flip-button`);}, 1000);
-  setTimeout(() => {$('.slider__buy-btn').style.opacity = 1;}, 1000);
+  $('.slider__buy-btn').classList.add(`fade-in__btn`);
+  setTimeout(() => {
+    $('.slider__buy-btn').classList.toggle(`flip-button`);
+    $('.slider__buy-btn').classList.toggle(`fade-in__btn`);
+  }, 800);
 
-  $('.buy-label').classList.toggle(`opacity-animation`);
+  $('.buy-label').classList.toggle(`appear-in__btn`);
   $('.buy-label').style['animation-delay'] = 0 + 's';
-  setTimeout(() => {$('.buy-label').style.opacity = 0;}, 200);
-  setTimeout(() => {$('.buy-label').classList.toggle(`opacity-animation`);}, 0);
-  setTimeout(() => {$('.buy-label').style.opacity = 1;}, 1000);
+  // setTimeout(() => {$('.buy-label').style.opacity = 0;}, 1000);
+  setTimeout(() => {$('.buy-label').classList.toggle(`appear-in__btn`);}, 1000);
+  // setTimeout(() => {$('.buy-label').style.opacity = 1;}, 1000);
 
-  $('.buy-btn:nth-child(1)').classList.toggle('active');
-  $('.buy-btn:nth-child(2)').classList.toggle('active');
+  setTimeout(() => {
+    $('.buy-btn:nth-child(1)').classList.toggle('active');
+    $('.buy-btn:nth-child(2)').classList.toggle('active');
+  }, 1000);
 };
 
 // Reload không có hình tĩnh
