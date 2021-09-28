@@ -49,6 +49,10 @@ html {
     border-radius: 20px;
     cursor: pointer;
 }
+
+.btn:hover {
+    opacity: 0.9;
+}
     
 .hot-search::before {
     content: "HOT";

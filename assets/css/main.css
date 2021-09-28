@@ -495,10 +495,6 @@ body {
     display: block;
 }
 
-.buy-btn:hover {
-    border-radius: 0;
-}
-
 .buy-label {
     position: absolute;
     top: -25px;
@@ -654,6 +650,10 @@ body {
     position: absolute;
     top: 43%;
     left: 40%;
+}
+
+.content-icon:hover {
+    opacity: 0.8;
 }
 
 .content-icon img {
@@ -1071,6 +1071,10 @@ body {
 
 .footer-social a {
     margin-right: 20px;
+}
+
+.footer-social a:hover {
+    opacity: 0.8;
 }
 
 .footer-social img {
