@@ -158,8 +158,9 @@ body {
     left: -23px;
     min-width: 190px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.692);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 20%);
     z-index: 999;
+    animation: appearIn ease-in-out .2s;
 }
 
 .sub-nav li {
@@ -186,8 +187,10 @@ body {
     left: 210px;
     min-width: 190px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.692);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 20%);
     z-index: 999;
+    animation: appearIn ease-in-out .2s;
+
 }
 
 .sub-nav li:hover .sub-sub-nav {
