@@ -46,6 +46,12 @@
     #slider {
         height: 513.19px;
     }
+    .video-embedded {
+        width: 756px;
+        height: 425px;
+        top: 13%;
+        left: -8.7%;
+    }
 }
 
 /* Mobile */
@@ -131,8 +137,24 @@
             top: var(--header-height);
         }
     }
+
+    .video-embedded {
+        width: 363px;
+        height: 204px;
+        top: 29.3%;
+        left: -4.3%;
+    }
 }
 
+/* Mobile plus*/
+@media (min-width: 414px) and (max-width: 739px) {
+    .video-embedded {
+        width: 382.4px;
+        height: 204px;
+        top: 28.7%;
+        left: -1.2%;
+    }
+}
 
 
 /* Text heading */
