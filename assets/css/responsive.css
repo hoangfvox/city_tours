@@ -71,7 +71,7 @@
         height: 276.64px;
     }
     .slider__buy-btn {
-        top: 65%;
+        top: 60%;
         left: 22%;
     }
     .buy-btn {
@@ -161,6 +161,20 @@
         height: 204px;
         top: 28.7%;
         left: -1.2%;
+    }
+}
+
+/* Mobile small */
+@media (max-width: 330px) {
+    .slider__buy-btn {
+        top: 53%;
+        left: 16%;
+    }
+    .video-embedded {
+        width: 308px;
+        height: 173px;
+        top: 40.3%;
+        left: -5.1%;
     }
 }
 
