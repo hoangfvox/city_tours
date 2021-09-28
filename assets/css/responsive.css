@@ -52,6 +52,10 @@
         top: 13%;
         left: -8.7%;
     }
+    .content-icon {
+        top: 40%;
+        left: 45%;  
+    }
 }
 
 /* Mobile */
@@ -80,6 +84,10 @@
     }
     .content-info {
         padding: 0 50px;
+    }
+    .content-icon {
+        top: 34%;
+        left: 38%;
     }
     #container {
         padding-left: 20px;
