@@ -68,9 +68,10 @@ var arrowBtn = () => {
   }, 1000);
 };
 
-// Reload không có hình tĩnh
+// Reload không có hình tĩnh và nav mobile
 setTimeout(() => {
   $('.inert-img').style.opacity = 1;
+  $('.nav__mobile').style.display = 'block';
 }, 1000);
 
 // 10s chuyển hình

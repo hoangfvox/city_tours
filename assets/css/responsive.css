@@ -3,6 +3,9 @@
     .content-section {
         flex-wrap: nowrap;
     }
+    .slider__buy-btn {
+        right: 28%;
+    }
 }
 
 /* Mobile & Tablet */

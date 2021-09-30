@@ -245,6 +245,7 @@ body {
 }
 
 .nav__mobile {
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -266,6 +267,7 @@ body {
 .nav__mobile-list,
 .nav__second-level,
 .nav__third-level {
+    margin-top: 0;
     list-style: none;
 }
 
@@ -295,13 +297,6 @@ body {
 
 .nav__mobile-list > li > a {
     font-size: 2.4rem;
-}
-
-.nav__second-level {
-}
-
-.nav__third-level {
-
 }
 
 .nav__mobile-close {
