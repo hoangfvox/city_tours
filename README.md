@@ -2,7 +2,7 @@
 
 <br />
 
-[<img align="center" alt="interface" width="100%" src="https://lh3.googleusercontent.com/5GqU1qQUxqE-_mAlm2qq6T3iNKP0wR12VmQQrXO7NuAyfcf3yDgbhC_5ErTLSTwxPfp7V9nRXLGV0Rn_86MzNSZ8IPJKtiiYYrAblrjBtKCqZAFjtz9Dqa5EyNxrwxISIbfppJdUyM6DeK_Cmidh_ZohpnUCZ4ulkrWAzcGzs9ZDy5LI8-yI-zW9BIGRgHJj2wz1cti9O8htyTV-BP86qmkQNVZ7A8iXjaw5xEF6XP7UeDpJDV9hg4SPe9hiNDD8DvZGamGA6b87SK49Mocfj6f_bs6GhhFmqChRDdtcwij-2GDGhKSdYvA-Vqn4UEETtSJP9_ddsw3CtpvqD8gOQpe37thnqmFDkyUNF50Wq1a2PMHfcd3n-zjNf54e9lsc4nLGsQE8oZVmJlTPk5N-gX1j_wn0xznwtXUBCzIYVr0OJVIYPEruWh1zBCFhoABaiafM7ydZxvIHrJzIBoNTnUeYq3LNJiiY5BA4pSav8nlI_-ZCERpC4M7jwdpcKGCPOrrCLrQqYLnX2rMsMOv8Ij43NO2NwkymYoaDH2RXmWBS2A6Vbi0DaNM09hSbKaqVKC5ZWOqWoBGZfIprheBiXmnHqeXZOwqMtZ1yZQ-LJFAeE2ffItqj5JvKLvuIfDzYy617V5iuk5sHLlnEUYD7BZ5qMn_R21IjEV8yU5i5_pYQxDheObtpDSDNAmfCLSXTLUCHRrWyH8TdYHGEvJOMNd4=w1838-h976-no?authuser=2" />][link]
+[<img align="center" alt="interface" width="100%" src="./assets/img/thumbnail.png" />][link]
 
 <br />
 
